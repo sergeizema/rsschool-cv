@@ -4,5 +4,16 @@
 }
 
 body {
-    background: aquamarine;
+    background: white;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+img {
+    margin-top: 120px;
+    border: solid 5px black;
+    border-radius: 50%;
 }
