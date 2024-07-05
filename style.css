@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    animation: image-infinite 7s infinite linear;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 80%;
+    background: white;
+}
+
+header {
+    margin-top: 30px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: right;
+}
+
+header img {
+    padding: 15px 30px;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font: small-caps bold 17px sans-serif;
+    border-bottom: solid 2px whitesmoke;
+    transition: 1s;
+}
+
+nav ul li a:hover {
+    border-bottom: solid 2px #252121;
+}
+
+main {
+    width: 100%;
+    margin-top: 15px;
+}
+
+section {
+    width: 100%;
+    background: whitesmoke;
+    margin-top: 20px;
+}
+
+h1 {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    font: italic small-caps bold 25px cursive;
+}
+
+article {
+    display: flex;
+    margin: 20px;
+}
+
+#about-me img {
+    width: 300px;
+    height: 340px;
+    margin-top: 20px;
+    margin-left: 38%;
+    margin-bottom: 20px;
+    border: solid 5px white;
+}
+
+#about-me p {
+    font-size: 20px;
+    padding: 2% 10%;
+}
+
+#skills p {
+    font-size: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30%;
+}
+
+#code p {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30%;
+}
+
+#work p {
+    font-size: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30%;
+}
+
+#education p {
+    font-size: 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 30%;
+}
+
+#contact p {
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+}
+
+#contact p a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 1px;
+    margin: 0 2vw;
+    border-bottom: solid 2px white;
+    transition: 1s;
+}
+
+#contact p a:hover {
+    border-bottom: solid 2px #252121;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5% 0;
+}
+
+.link {
+    display: flex;
+}
+
+.link img {
+    width: 64px;
+    height: 64px;
+}
+
+h2 {
+    align-items: center;
+    align-content: center;
+    margin-left: -40px;
+}
+
+@keyframes image-infinite {
+    0%   {
+        background: #2f68ff;
+    }
+    50%  {
+        background: #5e33cc;
+    }
+    100%  {
+        background: #2f68ff;
+    }
+}
