@@ -2,23 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title CV</title>
+    <title>HTML CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="">About me</a></li>
-                <li><a href="">My Skills</a></li>
-                <li><a href="">Example of completed tasks</a></li>
-                <li><a href="">Work experience</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Languages</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <img src="image/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about-me">
+                <h1>About Me</h1>
+                <img src="./image/ava.jpg" alt="">
+                <p>
+                    I study at Kuleshov University in Mogilev at the Faculty of Mathematics
+                    and Natural Sciences. I want to become a web-developer in the future.
+                    I am fond of sports. My favorite games are football and volleyball.
+                    I like to write programs :)
+                </p>
+            </section>
+            <section id="skills">
+                <h1>Skills</h1>
+                <p>
+                    Programming languages: JavaScript, C#, C++<br>
+                    DataBase: PostgreSQL, SQLServer, MySQL, PHPMyAdmin<br>
+                    Control systems: GIT<br>
+                </p>
+            </section>
+            <section id="code">
+                <h1>Code</h1>
+                <p>
+                    <code>
+                        const LS = localStorage;
+                        let dataLocal = JSON.parse(LS.getItem("basket"));<br>
+
+                        let generatingTheTotalAmount = () => {<br>
+                        let array = dataLocal;<br>
+                        let result = 0;<br>
+                        for (let key in array) {<br>
+                        result += dataLocal[key].getPrice * dataLocal[key].getQuantity<br>
+                        }<br>
+                        document.getElementById("outResult").innerHTML = result;<br>
+                        };<br>
+                    </code>
+                </p>
+            </section>
+            <section id="work">
+                <h1>Work</h1>
+                <p>
+                    Website development:<br>
+                    https://www.klimat-orsha.by/<br>
+                    https://orsha-cheese.by/ (Service/Support)<br>
+                    Working as a software engineer in Orsha Сheese Factory. https://orsha-cheese.by/<br>
+                </p>
+            </section>
+            <section id="education">
+                <h1>Education</h1>
+                <p>
+                    2020 Vitebsk State Polytechnic College<br>
+                    2026 Mogilev State University named after A. A. Kuleshov<br>
+                </p>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <p>
+                    <a href="">@Telegram</a>
+                    <a href="">@Instagram</a>
+                    <a href="">@Git</a>
+                </p>
+            </section>
+            <section id="languages">
+                <h1>Languages English (A1)</h1>
+            </section>
+        </main>
+        <footer>
+            <h2>2024</h2>
+            <div class="link">
+                <a href="https://github.com/sergeizema"><img src="./image/git.png" alt=""></a>
+                <a href="https://rs.school/courses/javascript-ru"><img src="https://avatars.githubusercontent.com/u/11501370?s=200&v=4" alt=""></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
