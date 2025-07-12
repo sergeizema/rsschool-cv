@@ -36,3 +36,42 @@ Analysis of business processes and automation of routine operations.
 
 Technical support and user training.
 
+***
+### About Myself:
+
+**Skills and Proficiency:**
+ + HTML/CSS
+ + JavaScript
+ + 1C
+
+***
+### Code example:
+This code implements the highlightText function, which highlights matches to the search query in the source text, including transliterated versions (for example, for Russian and English spellings).
+```
+import { transliterate } from "./transliterate";
+
+export const highlightText = (text, query) => {
+  if (!query) return text;
+
+  const transliteratedQuery = transliterate(query).toLowerCase();
+  const transliteratedText = transliterate(text).toLowerCase();
+
+  const regex = new RegExp(`(${query}|${transliteratedQuery})`, "gi");
+
+  return text.split(regex).map((part, index) =>
+    part.toLowerCase() === query.toLowerCase() ||
+    transliterate(part).toLowerCase() === transliteratedQuery ? (
+      <span key={index} style={{ backgroundColor: "yellow" }}>
+        {part}
+      </span>
+    ) : (
+      part
+    )
+  );
+};
+```
+
+***
+### Languages:
+ * Russian
+ * English
