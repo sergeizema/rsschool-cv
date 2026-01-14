@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #2980b9;
+  margin: 25px 0 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-info {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.job,
+.education {
+  margin-bottom: 20px;
+}
+
+.job-title,
+.education-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.job-period,
+.education-period {
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+}
+
+.portfolio-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.portfolio-title {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.advantages {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.advantage {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.result-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.result-link:hover {
+  text-decoration: underline;
+}
+
+.page-break {
+  page-break-before: always;
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+
+  .page-break {
+    page-break-before: always;
+    margin-top: 40px;
+  }
+}
